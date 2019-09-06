@@ -1,0 +1,2 @@
+# wxapp_createIntersectionObserver
+createIntersectionObserver的使用demo
