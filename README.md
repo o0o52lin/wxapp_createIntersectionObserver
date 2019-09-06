@@ -18,4 +18,7 @@ this._observer = wx.createIntersectionObserver(this, {observeAll: true})
   })
 })
 </code></pre>
+![Alt text](https://raw.githubusercontent.com/o0o52lin/wxapp_createIntersectionObserver/master/imgs/1.png)
+![Alt text](https://raw.githubusercontent.com/o0o52lin/wxapp_createIntersectionObserver/master/imgs/2.png)
+
 代码片段地址: [https://developers.weixin.qq.com/s/7ljaHbm87Rbd](https://developers.weixin.qq.com/s/7ljaHbm87Rbd)
