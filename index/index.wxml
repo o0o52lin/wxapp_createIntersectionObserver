@@ -1,0 +1,17 @@
+<view class="area" style="top:{{viewportArea.top}}px;left:{{viewportArea.left}}px;width:{{viewportArea.width}};height:{{viewportArea.height}};"><text>进入该区域触发</text><text style="color:#fff">({{currentStr}})</text></view>
+<view style="height:40px">
+  <view class="nav fixed">
+    <view wx:for="{{navList}}" wx:key class="nav-item {{currentId==item.id?'hit':''}}"><text>{{item.name}}</text></view>
+  </view>
+</view>
+<view class="intro" style="height:300vw;">
+  <block wx:for="{{navList}}" wx:key>
+    <view>
+      <view  id="{{item.id}}" class="item" style="background:{{item.bgColor}}">
+        <text>{{item.name}}</text>
+      </view>
+      <view style="height:{{index+1>=navList.length?'80vh':'100px'}};width:100vw;background: #666;"></view>
+    </view>
+  </block>
+</view>
+<view hidden="{{!showBackTop}}" class="item-bottom item1" bindtap="top">返回顶部</view>
